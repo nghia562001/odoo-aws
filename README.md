@@ -28,7 +28,7 @@ $ sudo apt install python3-pip -y
 $ sudo apt install -y build-essential wget python3-dev python3-venv python3-wheel libfreetype6-dev libxml2-dev libzip-dev libldap2-dev libsasl2-dev python3-setuptools node-less libjpeg-dev zlib1g-dev libpq-dev libxslt1-dev libldap2-dev libtiff5-dev libjpeg8-dev libopenjp2-7-dev liblcms2-dev libwebp-dev libfribidi-dev libxcb1-dev
 ```
 
-**Tạo mới `user` cho hệ thống , chạy các lệnh sau:**
+**Tạo mới `user` cho hệ thống, chạy các lệnh sau:**
 
 ```bash
 $ sudo adduser odoo
@@ -45,3 +45,17 @@ $ sudo adduser odoo
 
 Cài đặt và cấu hình Postgresql
 ----
+
+**Cài đặt và khởi động cơ sở dữ liệu `PostgreSQL`, chạy các lệnh sau:**
+
+```bash
+$ sudo apt install postgresql postgresql-contrib -y
+$ sudo systemctl start postgresql
+$ sudo systemctl enable postgresql
+```
+
+**Khởi động cơ sở dữ liệu `PostgreSQL`, chạy các lệnh sau:**
+
+```bash
+$ sudo apt install postgresql postgresql-contrib -y
+```
