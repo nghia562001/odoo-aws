@@ -172,3 +172,5 @@ $ sudo systemctl enable odoo
 ```bash
 $ sudo systemctl status odoo
 ```
+
+📋 **Truy cập vào đường dẫn `http://3.107.76.91:8069/odoo`:**
