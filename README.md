@@ -110,3 +110,28 @@ odoo@ip-172-31-15-222:/opt/odoo$ source odoo-venv/bin/activate
 (odoo-venv) odoo@ip-172-31-15-222:/opt/odoo$ deactivate
 ```
 
+**Tạo thư mục `Addons`, chạy các lệnh sau:**
+```bash
+odoo@ip-172-31-15-222:/opt/odoo$ mkdir /opt/odoo/odoo-custom-addons
+odoo@ip-172-31-15-222:/opt/odoo$ exit
+```
+
+**Tạo file cấu hình `Configuration` cho `Odoo`, chạy các lệnh sau:**
+```bash
+$ sudo nano /etc/odoo.conf
+```
+
+> 📋 **Nội dung file cấu hình**
+>
+>[options]
+>
+>admin_passwd = 123456
+>
+>db_host = False
+>db_port = False
+>
+>db_user = odoo
+>db_password = False
+>
+>addons_path = /opt/odoo/odoo/addons,/opt/odoo/odoo-custom-addons
+
