@@ -10,8 +10,7 @@ Cài đặt môi trường
 $ sudo apt update
 ```
 
-> **Cài đặt `git`, chạy các lệnh sau:**
-Công cụ `git` quản lý mã nguồn được sử dụng rộng rãi để quản lý mã nguồn phần mềm.
+> **Cài đặt công cụ quản lý mã nguồn `git`, chạy các lệnh sau:**
 
 ```bash
 $ sudo apt install git -y
