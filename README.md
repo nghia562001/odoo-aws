@@ -36,13 +36,12 @@ $ sudo adduser odoo
 
 > 📋 **Thông tin user**
 >
-> - **Mật khẩu:** `123456`
-> - **Họ và tên:** odoo
-> - **Số phòng:** 1
-> - **Điện thoại công việc:** _(không có)_
-> - **Điện thoại nhà riêng:** _(không có)_
-> - **Khác:** _(không có)_
-
+> - **password:** `123456`
+> - **Full Name []:** odoo
+> - **Room Number []:** 1
+> - **Work Phone []:** _(không có)_
+> - **Home Phone []:** _(không có)_
+> - **Other []:** _(không có)_
 
 Cài đặt và cấu hình Postgresql
 ----
