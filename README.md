@@ -72,3 +72,41 @@ postgres# ALTER USER odoo WITH CREATEDB;
 postgres# \q
 exit;
 ```
+
+Cài đặt và cấu hình Odoo 18
+----
+
+**Tạo `thư mục` và thiết lập `quyền` cho `Odoo`, chạy các lệnh sau:**
+
+```bash
+$ sudo mkdir -p /opt/odoo/odoo
+$ sudo chown -R odoo /opt/odoo
+$ sudo chgrp -R odoo /opt/odoo
+```
+
+**Chuyển sang `user odoo` và cài đặt `Odoo 18`, chạy các lệnh sau:**
+
+```bash
+$ sudo su - odoo
+odoo@ip-172-31-15-222:~$ git clone https://www.github.com/odoo/odoo --depth 1 --branch 18.0 /opt/odoo/odoo
+odoo@ip-172-31-15-222:~$ cd /opt/odoo
+```
+
+**Tạo và khởi động môi trường ảo `Virtual Environment`, chạy các lệnh sau:**
+
+```bash
+odoo@ip-172-31-15-222:/opt/odoo$ python3 -m venv odoo-venv
+odoo@ip-172-31-15-222:/opt/odoo$ source odoo-venv/bin/activate
+```
+
+**Cài đặt các `Dependencies` cần thiết cho `Odoo`, chạy các lệnh sau:**
+```bash
+(odoo-venv) odoo@ip-172-31-15-222:/opt/odoo$ pip3 install wheel
+(odoo-venv) odoo@ip-172-31-15-222:/opt/odoo$ pip3 install -r odoo/requirements.txt
+```
+
+**`Deactivate` môi trường ảo `Virtual Environment`, chạy các lệnh sau:**
+```bash
+(odoo-venv) odoo@ip-172-31-15-222:/opt/odoo$ deactivate
+```
+
