@@ -161,3 +161,14 @@ $ sudo nano /etc/systemd/system/odoo.service
 >
 >WantedBy=multi-user.target
 
+**Khởi động hệ thống, chạy các lệnh sau:**
+```bash
+$ sudo systemctl daemon-reload
+$ sudo systemctl start odoo
+$ sudo systemctl enable odoo
+```
+
+**Kiểm tra trạng thái `status`, chạy các lệnh sau:**
+```bash
+$ sudo systemctl status odoo
+```
