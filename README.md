@@ -54,8 +54,14 @@ $ sudo systemctl start postgresql
 $ sudo systemctl enable postgresql
 ```
 
-**Khởi động cơ sở dữ liệu `PostgreSQL`, chạy các lệnh sau:**
+**Cấu hình cơ sở dữ liệu `PostgreSQL`, chạy các lệnh sau:**
 
 ```bash
-$ sudo apt install postgresql postgresql-contrib -y
+$ sudo passwd postgres
+$ su - postgres
+$ createuser odoo
+$ psql
+postgres# ALTER USER odoo WITH CREATEDB;
+postgres# \q
+exit;
 ```
