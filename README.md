@@ -131,7 +131,8 @@ $ sudo nano /etc/odoo.conf
 >db_user = odoo
 >db_password = False
 >
->addons_path = /opt/odoo/odoo/addons,/opt/odoo/odoo-custom-addons
+>#addons_path = /opt/odoo/odoo/addons,/opt/odoo/odoo-custom-addons
+>addons_path = /opt/odoo/odoo/addons,/opt/odoo/odoo-custom-addons/ticket-services/addons
 
 **Tạo file dịch vụ `Service` cho `Odoo`, chạy các lệnh sau:**
 ```bash
