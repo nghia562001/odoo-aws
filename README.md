@@ -34,7 +34,15 @@ $ sudo apt install -y build-essential wget python3-dev python3-venv python3-whee
 $ sudo adduser odoo
 ```
 
-_note password: 123456, Full Name []: odoo, Room Number []: 1
+Thông tin của user
+```bash
+password: 123456
+Full Name []: odoo
+Room Number []: 1
+        Work Phone []:
+        Home Phone []:
+        Other []:
+```
 
 Cài đặt và cấu hình Postgresql
 ----
