@@ -43,6 +43,13 @@ $ sudo adduser odoo
 > - **Home Phone []:** _(không có)_
 > - **Other []:** _(không có)_
 
+**Cài đặt `WKHTMLTOPDF`, chạy các lệnh sau:**
+
+```bash
+$ wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+$ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+```
+
 Cài đặt và cấu hình Postgresql
 ----
 
