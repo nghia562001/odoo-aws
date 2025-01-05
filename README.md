@@ -62,6 +62,6 @@ $ su - postgres
 $ createuser odoo
 $ psql
 postgres# ALTER USER odoo WITH CREATEDB;
-postgres# \q
+`postgres#` \q
 exit;
 ```
