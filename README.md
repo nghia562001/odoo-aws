@@ -133,3 +133,31 @@ $ sudo nano /etc/odoo.conf
 >
 >addons_path = /opt/odoo/odoo/addons,/opt/odoo/odoo-custom-addons
 
+**Tạo file dịch vụ `Service` cho `Odoo`, chạy các lệnh sau:**
+```bash
+$ sudo nano /etc/systemd/system/odoo.service
+```
+
+📋 **Nội dung file dịch vụ**
+>[Unit]
+>
+>Description=Odoo
+>Requires=postgresql.service
+>After=network.target postgresql.service
+>
+>[Service]
+>
+>Type=simple
+>SyslogIdentifier=odoo
+>PermissionsStartOnly=true
+>
+>User=odoo
+>Group=odoo
+>
+>ExecStart=/opt/odoo/odoo-venv/bin/python3 /opt/odoo/odoo/odoo-bin -c /etc/odoo.conf
+>StandardOutput=journal+console
+>
+>[Install]
+>
+>WantedBy=multi-user.target
+
