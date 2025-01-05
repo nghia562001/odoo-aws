@@ -34,8 +34,7 @@ $ sudo apt install -y build-essential wget python3-dev python3-venv python3-whee
 $ sudo adduser odoo
 ```
 
-> 📋 **Thông tin user**
->
+📋 **Thông tin user**
 > - **password:** `123456`
 > - **Full Name []:** odoo
 > - **Room Number []:** 1
@@ -121,8 +120,7 @@ odoo@ip-172-31-15-222:/opt/odoo$ exit
 $ sudo nano /etc/odoo.conf
 ```
 
-> 📋 **Nội dung file cấu hình**
->
+📋 **Nội dung file cấu hình**
 >[options]
 >
 >admin_passwd = 123456
