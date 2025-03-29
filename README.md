@@ -183,3 +183,10 @@ $ sudo systemctl status odoo
 ```
 
 📋 **Truy cập vào đường dẫn `http://3.107.76.91:8069/odoo`:**
+
+**Xóa database trong PGSQL, chạy các lệnh sau:**
+```bash
+sudo -i -u postgres
+psql -d postgres
+DROP DATABASE odoo;
+```
