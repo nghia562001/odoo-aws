@@ -100,6 +100,12 @@ odoo@ip-172-31-15-222:/opt/odoo$ python3 -m venv odoo-venv
 odoo@ip-172-31-15-222:/opt/odoo$ source odoo-venv/bin/activate
 ```
 
+**Cài đặt gói `Werkzeug` trong `Virtual Environment`, chạy các lệnh sau:**
+
+```bash
+(odoo-venv) odoo@ip-172-31-26-232:/opt/odoo$ pip install werkzeug
+```
+
 **Cài đặt các `Dependencies` cần thiết cho `Odoo`, chạy các lệnh sau:**
 ```bash
 (odoo-venv) odoo@ip-172-31-15-222:/opt/odoo$ pip3 install wheel
